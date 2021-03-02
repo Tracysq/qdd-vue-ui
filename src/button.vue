@@ -1,8 +1,6 @@
 <template>
     <button class="qdd-button" :class="{[`icon-${iconPosition}`]: true}">
-        <svg v-if="icon" class="icon" aria-hidden="true">
-            <use :xlink:href=`#i-${icon}`></use>
-        </svg>
+        <qdd-icon v-if="icon" class="icon" :name="icon"></qdd-icon>
         <div class="content">
             <slot></slot>
         </div>
