@@ -7,7 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue UI</title>
     <style>
-        * {margin: 0; padding: 0; box-sizing: border-box;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         :root {
             --button-height: 32px;
@@ -28,11 +32,23 @@
             font-size: var(--font-size);
         }
     </style>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <qdd-button></qdd-button>
+    <qdd-button icon="setting">
+        按钮
+    </qdd-button>
+    <qdd-button icon="setting" icon-position="right">
+        按钮
+    </qdd-button>
 </div>
 <script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_2393596_uhf8vgd6ju7.js"></script>
 </body>
 </html>
