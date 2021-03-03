@@ -10,7 +10,6 @@
 
 <script>
     export default {
-        // props: ['icon', 'iconPosition']
         props: {
             icon: {},
             iconPosition: {
@@ -37,6 +36,7 @@
             transform: rotate(360deg);
         }
     }
+
     .qdd-button {
         font-size: var(--font-size);
         height: var(--button-height);
