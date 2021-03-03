@@ -1,6 +1,7 @@
 <template>
-    <button class="qdd-button" :class="{[`icon-${iconPosition}`]: true}">
-        <qdd-icon v-if="icon" class="icon" :name="icon"></qdd-icon>
+    <button class="qdd-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
+        <qdd-icon v-if="icon && !loading" class="icon" :name="icon"></qdd-icon>
+        <qdd-icon v-if="loading" class="loading icon" name="loading"></qdd-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -18,12 +19,24 @@
                 validator(value) {
                     return value === 'left' || value === 'right'
                 }
+            },
+            loading: {
+                type: Boolean,
+                default: false
             }
         }
     }
 </script>
 
 <style lang="scss">
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
     .qdd-button {
         font-size: var(--font-size);
         height: var(--button-height);
@@ -67,6 +80,10 @@
                 margin-left: .1em;
                 margin-right: 0;
             }
+        }
+
+        .loading {
+            animation: spin 1s infinite linear;
         }
     }
 </style>

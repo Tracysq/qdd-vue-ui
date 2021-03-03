@@ -6,5 +6,10 @@ Vue.component('qdd-button', Button)
 Vue.component('qdd-icon', Icon)
 
 new Vue({
-    el: '#app'
+    el: '#app',
+    data() {
+        return {
+            loading1: false
+        }
+    }
 })
