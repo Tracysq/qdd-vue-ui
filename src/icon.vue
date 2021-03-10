@@ -7,11 +7,12 @@
 <script>
     import './svg'
     export default {
+        name: 'qdd-icon',
         props: ['name']
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .qdd-icon {
         width: 1em;
         height: 1em;

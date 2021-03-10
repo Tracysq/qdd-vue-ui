@@ -32,24 +32,40 @@
             font-size: var(--font-size);
         }
     </style>
+    <style>
+        .box {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <div id="app">
-    <qdd-button :loading="loading1" @click="loading1 = !loading1">
-        按钮
-    </qdd-button>
-    <qdd-button icon="setting">
-        按钮
-    </qdd-button>
-    <qdd-button icon="setting" icon-position="right">
-        按钮
-    </qdd-button>
-    <qdd-icon name="download"></qdd-icon>
-    <qdd-button-group>
-        <qdd-button icon="left" icon-position="left">上一页</qdd-button>
-        <qdd-button>更多</qdd-button>
-        <qdd-button icon="right" icon-position="right">下一页</qdd-button>
-    </qdd-button-group>
+    <div class="box">
+        <qdd-input value="张三" disabled></qdd-input>
+        <qdd-input value="李四" readonly></qdd-input>
+        <qdd-input value="王五"></qdd-input>
+    </div>
+    <div class="box">
+        <qdd-input value="王五" error="姓名不能少于两个字"></qdd-input>
+    </div>
+    <div class="box">
+        <qdd-button :loading="loading1" @click="loading1 = !loading1">
+            按钮
+        </qdd-button>
+        <qdd-button icon="setting">
+            按钮
+        </qdd-button>
+        <qdd-button icon="setting" icon-position="right">
+            按钮
+        </qdd-button>
+        <qdd-icon name="download"></qdd-icon>
+        <qdd-button-group>
+            <qdd-button icon="left" icon-position="left">上一页</qdd-button>
+            <qdd-button>更多</qdd-button>
+            <qdd-button icon="right" icon-position="right">下一页</qdd-button>
+        </qdd-button-group>
+    </div>
+
 </div>
 <script src="./src/app.js"></script>
 <!--<script src="//at.alicdn.com/t/font_2393596_uhf8vgd6ju7.js"></script>-->

@@ -2,10 +2,12 @@ import Vue from 'vue'
 import Button from './button'
 import Icon from './icon'
 import ButtonGroup from './button-group'
+import Input from './input'
 
 Vue.component('qdd-button', Button)
 Vue.component('qdd-icon', Icon)
 Vue.component('qdd-button-group', ButtonGroup)
+Vue.component('qdd-input', Input)
 
 new Vue({
     el: '#app',
@@ -23,7 +25,7 @@ chai.use(spies)
 
 const expect = chai.expect
 
-try {
+/*try {
     //单元测试
     {
         const Constructor = Vue.extend(Button)
@@ -111,5 +113,5 @@ try {
     window.errors && window.errors.forEach(error => {
         console.error(error.message)
     })
-}
+}*/
 

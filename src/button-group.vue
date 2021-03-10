@@ -6,6 +6,7 @@
 
 <script>
     export default {
+        name: 'qdd-button-group',
         mounted() {
             for (let node of this.$el.children) {
                 let name = node.nodeName.toLocaleLowerCase()
@@ -17,7 +18,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .qdd-button-group {
         display: inline-flex;
         vertical-align: middle;
