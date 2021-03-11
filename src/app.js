@@ -15,6 +15,19 @@ new Vue({
         return {
             loading1: false
         }
+    },
+    created(){
+        /*setTimeout(()=> {
+            const event = new Event('change')
+            const inputEl = this.$el.querySelector('input')
+            inputEl.dispatchEvent(event)
+            console.log(event);
+        }, 3000)*/
+    },
+    methods: {
+        inputChange(e){
+            console.log(e, e.target.value);
+        }
     }
 })
 

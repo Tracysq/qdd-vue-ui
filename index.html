@@ -49,6 +49,9 @@
         <qdd-input value="王五" error="姓名不能少于两个字"></qdd-input>
     </div>
     <div class="box">
+        <qdd-input value="王五" @change="inputChange"></qdd-input>
+    </div>
+    <div class="box">
         <qdd-button :loading="loading1" @click="loading1 = !loading1">
             按钮
         </qdd-button>
