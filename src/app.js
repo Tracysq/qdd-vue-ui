@@ -13,10 +13,11 @@ new Vue({
     el: '#app',
     data() {
         return {
-            loading1: false
+            loading1: false,
+            message: 'hi'
         }
     },
-    created(){
+    created() {
         /*setTimeout(()=> {
             const event = new Event('change')
             const inputEl = this.$el.querySelector('input')
@@ -25,7 +26,7 @@ new Vue({
         }, 3000)*/
     },
     methods: {
-        inputChange(e){
+        inputChange(e) {
             console.log(e, e.target.value);
         }
     }
