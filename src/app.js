@@ -3,11 +3,15 @@ import Button from './button'
 import Icon from './icon'
 import ButtonGroup from './button-group'
 import Input from './input'
+import Row from './row'
+import Col from './col'
 
 Vue.component('qdd-button', Button)
 Vue.component('qdd-icon', Icon)
 Vue.component('qdd-button-group', ButtonGroup)
 Vue.component('qdd-input', Input)
+Vue.component('qdd-row', Row)
+Vue.component('qdd-col', Col)
 
 new Vue({
     el: '#app',

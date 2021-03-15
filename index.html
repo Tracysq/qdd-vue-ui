@@ -40,6 +40,35 @@
 </head>
 <body>
 <div id="app">
+    <div class="box" style="border: 1px solid black;">
+        <qdd-row :gutter="20">
+            <qdd-col :gutter="20">1</qdd-col>
+            <qdd-col :gutter="20">2</qdd-col>
+        </qdd-row>
+        <qdd-row :gutter="20">
+            <qdd-col>1</qdd-col>
+            <qdd-col>2</qdd-col>
+            <qdd-col>3</qdd-col>
+        </qdd-row>
+        <qdd-row>
+            <qdd-col>1</qdd-col>
+            <qdd-col>2</qdd-col>
+            <qdd-col>3</qdd-col>
+            <qdd-col>4</qdd-col>
+        </qdd-row>
+        <qdd-row>
+            <qdd-col :span="2">1</qdd-col>
+            <qdd-col :span="22">2</qdd-col>
+        </qdd-row>
+        <qdd-row :gutter="20">
+            <qdd-col :span="2">1</qdd-col>
+            <qdd-col :span="20" :offset="2">2</qdd-col>
+        </qdd-row>
+        <qdd-row>
+            <qdd-col :span="8">1</qdd-col>
+            <qdd-col :span="8" :offset="8">2</qdd-col>
+        </qdd-row>
+    </div>
     <div class="box">
         <qdd-input value="张三" disabled></qdd-input>
         <qdd-input value="李四" readonly></qdd-input>
@@ -73,7 +102,6 @@
             <qdd-button icon="right" icon-position="right">下一页</qdd-button>
         </qdd-button-group>
     </div>
-
 </div>
 <script src="./src/app.js"></script>
 <!--<script src="//at.alicdn.com/t/font_2393596_uhf8vgd6ju7.js"></script>-->
