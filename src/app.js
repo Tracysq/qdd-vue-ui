@@ -5,6 +5,11 @@ import ButtonGroup from './button-group'
 import Input from './input'
 import Row from './row'
 import Col from './col'
+import Layout from './layout'
+import Header from './header'
+import Sider from './sider'
+import Content from './content'
+import Footer from './footer'
 
 Vue.component('qdd-button', Button)
 Vue.component('qdd-icon', Icon)
@@ -12,6 +17,11 @@ Vue.component('qdd-button-group', ButtonGroup)
 Vue.component('qdd-input', Input)
 Vue.component('qdd-row', Row)
 Vue.component('qdd-col', Col)
+Vue.component('qdd-layout', Layout)
+Vue.component('qdd-header', Header)
+Vue.component('qdd-sider', Sider)
+Vue.component('qdd-content', Content)
+Vue.component('qdd-footer', Footer)
 
 new Vue({
     el: '#app',
