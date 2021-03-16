@@ -54,14 +54,29 @@
         border: 1px solid #666;
         min-height: 100px;
     }
+    .sider {
+        background: #333;
+        width: 150px;
+    }
+    .sider.slide-enter, .sider.slide-leave-to {
+        margin-left: -150px;
+    }
+    .header {
+        background: #999;
+        height: 100px;
+    }
+    .footer {
+        background: #ccc;
+        height: 50px;
+    }
 </style>
 <div id="app">
-    <qdd-layout style="height: 100vh; border: 1px solid red;">
-        <qdd-sider class="demo-layout">sider</qdd-sider>
+    <qdd-layout style="height: 100vh;">
+        <qdd-sider>sider</qdd-sider>
         <qdd-layout>
-            <qdd-header class="demo-layout">header</qdd-header>
-            <qdd-content class="demo-layout">content</qdd-content>
-            <qdd-footer class="demo-layout">footer</qdd-footer>
+            <qdd-header>header</qdd-header>
+            <qdd-content>content</qdd-content>
+            <qdd-footer>footer</qdd-footer>
         </qdd-layout>
     </qdd-layout>
 
